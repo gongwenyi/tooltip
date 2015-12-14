@@ -1,0 +1,125 @@
+.ui.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.ui.tooltip:before,
+.ui.tooltip:after {
+  position: absolute;
+  opacity: 0;
+  z-index: 1000000;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  pointer-events: none;
+  line-height: 18px;
+  text-indent: 0;
+}
+.ui.tooltip:hover {
+  opacity: 1;
+}
+.ui.tooltip:hover:after,
+.ui.tooltip:hover:before {
+  opacity: 1;
+}
+.ui.tooltip:before {
+  content: '';
+  background: transparent;
+  border: 6px solid transparent;
+  position: absolute;
+}
+.ui.tooltip:after {
+  content: attr(data-tooltip);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.ui.tooltip.ontop:before {
+  bottom: 100%;
+  left: 15%;
+  margin: 0 0 -26px 0;
+  border-top-color: rgba(0, 0, 0, 0.8);
+}
+.ui.tooltip.ontop:after {
+  bottom: 100%;
+  left: 15%;
+  margin: 0 0 -14px -10px;
+}
+.ui.tooltip.ontop:hover:before {
+  margin: 0 0 -18px 0;
+}
+.ui.tooltip.ontop:hover:after {
+  margin: 0 0 -6px -10px;
+}
+.ui.tooltip.onbottom:before {
+  top: 100%;
+  left: 35%;
+  margin: -22px 0 0 0;
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+.ui.tooltip.onbottom:after {
+  top: 100%;
+  left: 35%;
+  margin: -10px 0 0 -10px;
+}
+.ui.tooltip.onbottom:hover:before {
+  margin: -16px 0 0 0;
+}
+.ui.tooltip.onbottom:hover:after {
+  margin: -4px 0 0 -10px;
+}
+.ui.tooltip.onright:before {
+  left: 110%;
+  bottom: 50%;
+  margin: 0 0 -4px 8px;
+  border-right-color: rgba(0, 0, 0, 0.8);
+}
+.ui.tooltip.onright:after {
+  left: 110%;
+  bottom: 50%;
+  margin: 0 0 -15px 20px;
+}
+.ui.tooltip.onright:hover:before {
+  margin: 0 0 -4px -4px;
+}
+.ui.tooltip.onright:hover:after {
+  margin: 0 0 -15px 8px;
+}
+.ui.tooltip.onleft:before {
+  right: 110%;
+  bottom: 50%;
+  margin: 0 -15px -4px 0;
+  border-left-color: rgba(0, 0, 0, 0.8);
+}
+.ui.tooltip.onleft:after {
+  right: 110%;
+  bottom: 50%;
+  margin: 0 -3px -13px 0;
+}
+.ui.tooltip.onleft:hover:before {
+  margin: 0 -23px -4px 0;
+}
+.ui.tooltip.onleft:hover:after {
+  margin: 0 -11px -13px 0;
+}
+.ui.tooltip.oncenter:before {
+  bottom: 140%;
+  left: -14%;
+  margin: 0 0 -38px 0;
+  border-top-color: rgba(0, 0, 0, 0.8);
+}
+.ui.tooltip.oncenter:after {
+  bottom: 100%;
+  margin: 0 0 -14px 0px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.ui.tooltip.oncenter:hover:before {
+  margin: 0 0 -14px 0;
+}
+.ui.tooltip.oncenter:hover:after {
+  margin: 0 0 10px 0px;
+}

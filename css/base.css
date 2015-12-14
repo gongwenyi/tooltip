@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "microsoft yahei", Arial;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  font-size: .9rem;
+  background: #fff;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear:after {
+  content: "";
+  height: 0px;
+  display: block;
+  clear: both;
+}
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+a {
+  text-decoration: none;
+  position: relative;
+}
+a:link,
+a:visited,
+a:active {
+  color: #333;
+}
+ul li {
+  list-style: none;
+}
+::-ms-scrollbar {
+  width: 8px;
+  height: 8px;
+  transition: .3s;
+}
+::-ms-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-ms-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  transition: .3s;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+::-moz-scrollbar {
+  width: 8px;
+  height: 8px;
+  transition: .3s;
+}
+::-moz-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-moz-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
